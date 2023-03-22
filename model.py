@@ -22,3 +22,4 @@ class SelfAttention(nn.Module):
 class MLPHead(nn.Module):
     def __init__(self):
         pass
+        # final module here
