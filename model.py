@@ -17,3 +17,8 @@ class Transformer(nn.Module):
 class SelfAttention(nn.Module):
     def __init__(self):
         pass
+
+
+class MLPHead(nn.Module):
+    def __init__(self):
+        pass
