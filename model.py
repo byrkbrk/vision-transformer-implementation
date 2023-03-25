@@ -5,8 +5,11 @@ import torch.nn as nn
 
 class EmbeddingLayer(nn.Module):
     def __init__(self):
-        pass
-        # implement here patchify method
+        super(EmbeddingLayer, self).__init__()
+        self.one_hot_dim = 8
+        self.lin_layer = nn.Linear(self.input_dim, D, bias=False)
+        self.one_hot_map = nn.Linear(self.one_hot_dim, self.input_dim, bias=False)
+
 
 
 class Transformer(nn.Module):
