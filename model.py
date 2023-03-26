@@ -10,6 +10,11 @@ class EmbeddingLayer(nn.Module):
         self.lin_layer = nn.Linear(self.input_dim, D, bias=False)
         self.one_hot_map = nn.Linear(self.one_hot_dim, self.input_dim, bias=False)
 
+    def get_position_vectors(self):
+        pass
+
+    def patchify_and_transform(self):
+        pass
 
 
 class Transformer(nn.Module):
