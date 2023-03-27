@@ -70,3 +70,8 @@ class SelfAttention(nn.Module):
         # go back to original dimension i.e. dimx
         R = self.W_r @ R
         return R.transpose(1, 2)
+
+
+class ViT(nn.Module):
+    def __init__(self):
+        pass
